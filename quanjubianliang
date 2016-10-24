@@ -1,1 +1,30 @@
-<?php $a="red";$b=12;$c=11.11;$a_bool = TRUE;$a_str = "foo";$a_str2 = 'foo';$an_int = 12;echo $a,$b,$c;echo "<br />";echo "My car is ".$a."<br>";function myTest(){ global $b,$c; $c=$b+$c;}myTest();echo $c;echo "<br />";?>
+<?php $a="red";
+$b=12;$c=11.11;
+$a_bool = TRUE;
+$a_str = "foo";
+$a_str2 = 'foo';
+$an_int = 12;
+echo $a,$b,$c;
+echo "<br />";
+echo "My car is ".$a."<br>";
+function myTest(){ global $b,$c; $c=$b+$c;}
+myTest();
+echo $c;
+echo "<br />";?>
+
+
+
+
+<?php $a="red";
+$b=12;$c=11.11;
+echo $a,$b,$c;echo "<br />";
+echo "My car is ".$a."<br>";
+function myTest(){ $GLOBALS['c']=$GLOBALS['b']+$GLOBALS['c'];}
+myTest();echo $c;echo "<br />";
+function mystudy(){ static $x=99; echo $x; $x++;}
+mystudy();echo "<br />";
+mystudy();echo "<br />";
+mystudy();echo "<br />";
+mystudy();echo "<br />";
+mystudy();echo "<br />";
+mystudy();echo "<br />";?>
