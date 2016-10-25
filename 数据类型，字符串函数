@@ -1,0 +1,16 @@
+<?php//PHP对象
+class Car{
+var $color; 
+function Car($color="green"){ 
+$this->color=$color; 
+} 
+function what_color(){ 
+return $this->color; 
+}
+}
+$x="jdhfuaiue";
+$x=null;//清空变量值
+var_dump($x);
+echo strlen("klsajdhfi");//字符串长度
+echo "<br>";
+echo strpos("sfgthrjdfkadh", "df");//检查返回字符串首位置?>
